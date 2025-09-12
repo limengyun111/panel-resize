@@ -18,7 +18,6 @@ function PanelGroup(props) {
     });
 
     panelRef.current = new PanelResize(parentEle.current, { sizeData: panelSizeData, direction, customCursor, autoSaveId });
-    panelRef.current.setLayout([{defaultSize: 30}, {defaultSize: 30}, {defaultSize: 40 }])
   }, []);
 
 

@@ -1,19 +1,19 @@
 
-import { PanelGroup, Panel, PanelResizeHandle } from './components/index.js';
+import { PanelGroup, Panel, PanelResizeHandle } from './components/index.jsx';
 
 function App() {
   return (
-    <div>
+    <div style={{ height: 300 }}>
       <PanelGroup>
-        <Panel defaultSize={30} minSize={20}>
+        <Panel>
           left
         </Panel>
-        <PanelResizeHandle className='custom-handler'/>
-        <Panel minSize={20}>
+        <PanelResizeHandle />
+        <Panel>
           middle
         </Panel>
         <PanelResizeHandle />
-        <Panel defaultSize={40} minSize={20}>
+        <Panel>
           right
         </Panel>
       </PanelGroup>
